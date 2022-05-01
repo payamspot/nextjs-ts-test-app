@@ -1,4 +1,6 @@
 import { useState, MouseEvent } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import {
   AppBar,
   Box,
@@ -13,7 +15,6 @@ import {
   MenuItem,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import styles from '../styles/navigation.module.scss';
 
 const pages = [
   ['Home', '/'],
@@ -24,6 +25,7 @@ const pages = [
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navigation() {
+  const router = useRouter();
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
@@ -82,7 +84,9 @@ function Navigation() {
             >
               {pages.map((page) => (
                 <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page[0]}</Typography>
+                  <Typography textAlign="center">
+                    <Link href={page[1]}>{page[0]}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -101,7 +105,7 @@ function Navigation() {
                 key={page[0]}
                 onClick={() => {
                   handleCloseNavMenu();
-                  // navigate(page[1]);
+                  router.push(page[1]);
                 }}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
