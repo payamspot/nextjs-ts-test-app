@@ -1,4 +1,30 @@
 {
+  "products": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "image": "productImg001",
+      "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+    },
+    {
+      "id": 2,
+      "title": "Bag",
+      "image": "productImg002",
+      "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica 2"
+    },
+    {
+      "id": 3,
+      "title": "Laptop & Bag",
+      "image": "productImg003",
+      "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica 3"
+    },
+    {
+      "id": 4,
+      "title": "Laptop Two!",
+      "image": "productImg004",
+      "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica 4"
+    }
+  ],
   "tasks": [
     {
       "id": 1,
