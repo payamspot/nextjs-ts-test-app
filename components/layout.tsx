@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
+import Navigation from './navigation';
 import styles from '../styles/layout.module.scss';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -19,10 +20,11 @@ function Layout({ children }: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Navigation!</h1>
-        {children}
-      </main>
+      <header>
+        <Navigation></Navigation>
+      </header>
+
+      <main>{children}</main>
 
       <footer>footer!</footer>
     </div>
