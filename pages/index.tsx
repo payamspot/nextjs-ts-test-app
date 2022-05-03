@@ -82,10 +82,7 @@ const Home: NextPage<Props> = ({ products }: Props) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const res = await fetch('http://localhost:3333/products');
-  const res = await fetch(
-    'https://627118fb6a36d4d62c2128ba.mockapi.io/products'
-  );
+  const res = await fetch(process.env.API_HOST + 'products');
   const products: Product[] = await res.json();
   return {
     props: {
