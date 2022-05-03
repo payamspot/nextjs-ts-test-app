@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { NextPage, GetStaticProps } from 'next';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import styles from '../styles/index.module.scss';
@@ -10,7 +10,9 @@ type Product = {
   description: string;
 };
 
-const Home: NextPage = () => {
+const Home: NextPage<Product[]> = (products): any => {
+  console.log(products);
+
   return (
     <Layout>
       <Head>
@@ -20,7 +22,7 @@ const Home: NextPage = () => {
   );
 };
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch('http://localhost:3333/products');
   const products: Product[] = await res.json();
   return {
@@ -28,6 +30,6 @@ export async function getStaticProps() {
       products,
     },
   };
-}
+};
 
 export default Home;
