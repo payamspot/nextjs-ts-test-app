@@ -39,7 +39,6 @@ const Home: NextPage<Product[]> = (products: Product[]) => {
 */
 
 const Home: NextPage<Props> = ({ products }: Props) => {
-  console.log(products);
   return (
     <Layout>
       <Head>
@@ -85,7 +84,7 @@ const Home: NextPage<Props> = ({ products }: Props) => {
 export const getStaticProps: GetStaticProps = async () => {
   // const res = await fetch('http://localhost:3333/products');
   const res = await fetch(
-    'https://next-ts-test-app.free.beeceptor.com/products'
+    'https://627118fb6a36d4d62c2128ba.mockapi.io/products'
   );
   const products: Product[] = await res.json();
   return {
