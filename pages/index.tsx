@@ -69,7 +69,7 @@ const Home: NextPage<Props> = ({ products }: Props) => {
                 <CardActions>
                   <Button size="small">Add to Cart</Button>
                   <Button size="small">
-                    <Link href={'/products/100' + product.id}>Learn More</Link>
+                    <Link href={'/products/' + product.id}>Learn More</Link>
                   </Button>
                 </CardActions>
               </Card>

@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const pages = [
   ['Home', '/'],
   ['Todo List', 'todo-list'],
-  ['P.1001', 'products/1001'],
+  ['P.1', 'products/1'],
   ['Blog', 'blog'],
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
