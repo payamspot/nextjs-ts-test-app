@@ -3,16 +3,32 @@ import Layout from '../components/layout';
 import Head from 'next/head';
 import styles from '../styles/index.module.scss';
 
+interface Product {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+}
+
+type Props = {
+  products: Product[];
+};
+
+/* could be this ?. */
+/*
 type Product = {
   id: number;
   title: string;
   image: string;
   description: string;
+}
+
+const Home: NextPage<Product[]> = (products: Product[]) => {
+
 };
+*/
 
-const Home: NextPage<Product[]> = (products): any => {
-  console.log(products);
-
+const Home: NextPage<Props> = ({ products }: Props) => {
   return (
     <Layout>
       <Head>
