@@ -21,6 +21,7 @@ const pages = [
   ['Todo List', 'todo-list'],
   ['P.1', 'products/1'],
   ['Blog', 'blog'],
+  ['Products-SSR', 'products-ssr'],
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
