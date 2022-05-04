@@ -18,10 +18,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
   ['Home', '/'],
-  ['Todo List', 'todo-list'],
-  ['P.1', 'products/1'],
-  ['Blog', 'blog'],
-  ['Products-SSR', 'products-ssr'],
+  ['Todo List', '/todo-list'],
+  ['P.1', '/products/1'],
+  ['Blog', '/blog'],
+  ['Products-SSR', '/products-ssr'],
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -87,7 +87,7 @@ function Navigation() {
                 <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     {/* Mobile Links */}
-                    <Link href={'/' + page[1]}>{page[0]}</Link>
+                    <Link href={page[1]}>{page[0]}</Link>
                   </Typography>
                 </MenuItem>
               ))}
@@ -108,7 +108,7 @@ function Navigation() {
                 key={page[0]}
                 onClick={() => {
                   handleCloseNavMenu();
-                  router.push('/' + page[1]);
+                  router.push(page[1]);
                 }}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
