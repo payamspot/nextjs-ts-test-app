@@ -85,7 +85,8 @@ function Navigation() {
               {pages.map((page) => (
                 <MenuItem key={page[0]} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link href={page[1]}>{page[0]}</Link>
+                    {/* Mobile Links */}
+                    <Link href={'/' + page[1]}>{page[0]}</Link>
                   </Typography>
                 </MenuItem>
               ))}
@@ -101,11 +102,12 @@ function Navigation() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+              /* Desktop Buttons */
               <Button
                 key={page[0]}
                 onClick={() => {
                   handleCloseNavMenu();
-                  router.push(page[1]);
+                  router.push('/' + page[1]);
                 }}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
