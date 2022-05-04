@@ -9,15 +9,12 @@ interface Product {
   imageURL: string;
   description: string;
 }
-
 type Props = {
   product: Product;
 };
-
 interface Param {
   pid: string;
 }
-
 type Params = {
   params: Param;
 };
@@ -59,10 +56,6 @@ export async function getStaticProps({ params }: Params) {
   const product: Product = await res.json();
   return { props: { product } };
 }
-
-/*export const getStaticProps: GetStaticProps = async () => {
-  ...
-};*/
 
 export async function getStaticPaths() {
   const res = await fetch(process.env.API_HOST + 'products');

@@ -1,4 +1,4 @@
-import type { NextPage, GetStaticProps } from 'next';
+import type { NextPage } from 'next';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -81,7 +81,7 @@ const Home: NextPage<Props> = ({ products }: Props) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
   const res = await fetch(process.env.API_HOST + 'products');
   const products: Product[] = await res.json();
   return {
@@ -89,6 +89,9 @@ export const getStaticProps: GetStaticProps = async () => {
       products,
     },
   };
-};
+}
+
+/* could be this */
+// export const getStaticProps: GetStaticProps = async () => {
 
 export default Home;
