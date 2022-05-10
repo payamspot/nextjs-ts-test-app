@@ -18,11 +18,13 @@ const Blog: NextPage = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:3333/products').then((res) => {
-      const bPosts = res.data;
-      setBlogPosts(bPosts);
-      setLoading(false);
-    });
+    axios
+      .get('https://627118fb6a36d4d62c2128ba.mockapi.io/products')
+      .then((res) => {
+        const bPosts = res.data;
+        setBlogPosts(bPosts);
+        setLoading(false);
+      });
   }, []);
 
   if (isLoading)
