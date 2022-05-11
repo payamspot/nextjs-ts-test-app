@@ -53,7 +53,12 @@ const Product: NextPage<Props> = ({ product }: Props) => {
           </div>*/}
           {/* or to use next/image !!! */}
           <div>
-            <Image src={productImage1} alt="product.title" priority />
+            <Image
+              src={productImage1}
+              alt="product.title"
+              placeholder="blur"
+              priority
+            />
             <br />
             <Image
               src={productImageSample}
