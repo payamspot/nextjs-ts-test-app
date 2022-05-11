@@ -39,7 +39,7 @@ const Product: NextPage<Props> = ({ product }: Props) => {
             </span>
           </h2>
           {/* not to use next/image !? ... */}
-          <div>
+          {/*<div>
             <img
               src={'/images/products/00' + product.id + '.jpg'}
               alt={product.title}
@@ -50,7 +50,7 @@ const Product: NextPage<Props> = ({ product }: Props) => {
               alt="sample product"
               style={{ width: '100%', maxWidth: '800px' }}
             />
-          </div>
+          </div>*/}
           {/* or to use next/image !!! */}
           <div>
             <Image src={productImage1} alt="product.title" priority />
