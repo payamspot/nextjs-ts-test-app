@@ -1,7 +1,10 @@
 import { NextPage } from 'next';
 import Layout from '../../components/layout';
 import Head from 'next/head';
+import Image from 'next/image';
 import { Container, Typography } from '@mui/material';
+import productImage1 from '/public/images/products/001.jpg';
+import productImageSample from '/public/images/products/product-image-sample.jpg';
 
 interface Product {
   id: number;
@@ -35,16 +38,31 @@ const Product: NextPage<Props> = ({ product }: Props) => {
               {product.id}: {product.title}
             </span>
           </h2>
-          <img
-            src={'/images/products/00' + product.id + '.jpg'}
-            alt={product.title}
-          />
-          <br />
-          <img
-            src={'/images/products/product-image-sample.jpg'}
-            alt="sample product"
-            style={{ width: '100%', maxWidth: '800px' }}
-          />
+          {/* not to use next/image !? ... */}
+          <div>
+            <img
+              src={'/images/products/00' + product.id + '.jpg'}
+              alt={product.title}
+            />
+            <br />
+            <img
+              src={'/images/products/product-image-sample.jpg'}
+              alt="sample product"
+              style={{ width: '100%', maxWidth: '800px' }}
+            />
+          </div>
+          {/* or to use next/image !!! */}
+          <div>
+            <Image src={productImage1} alt="product.title" priority />
+            <br />
+            <Image
+              src={productImageSample}
+              alt="sample product"
+              width={800}
+              height={450}
+              placeholder="blur"
+            />
+          </div>
         </Typography>
       </Container>
     </Layout>
