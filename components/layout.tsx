@@ -9,24 +9,26 @@ type Props = {
 
 function Layout({ children }: Props) {
   return (
-    <div className={styles.wrapper}>
-      <Head>
-        <title>Next.js TS Test App</title>
-        <meta name="description" content="A Test Next.js App by PayamRWD!" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div dir="rtl">
+      <div className={styles.wrapper}>
+        <Head>
+          <title>Next.js TS Test App</title>
+          <meta name="description" content="A Test Next.js App by PayamRWD!" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <header>
-        <Navigation></Navigation>
-      </header>
+        <header>
+          <Navigation></Navigation>
+        </header>
 
-      <main>{children}</main>
+        <main>{children}</main>
 
-      <footer>footer!</footer>
+        <footer>footer!</footer>
+      </div>
     </div>
   );
 }
