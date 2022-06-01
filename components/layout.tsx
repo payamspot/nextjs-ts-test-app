@@ -13,6 +13,10 @@ function Layout({ children }: Props) {
       <Head>
         <title>Next.js TS Test App</title>
         <meta name="description" content="A Test Next.js App by PayamRWD!" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
