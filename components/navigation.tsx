@@ -18,7 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
   ['صفحه اصلی', '/'],
-  ['تودو-لیست', '/todo-list'],
+  ['تودو لیست', '/todo-list'],
   ['محصول1', '/products/1'],
   ['وبلاگ', '/blog'],
   ['محصولات-SSR', '/products-ssr'],
