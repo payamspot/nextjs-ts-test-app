@@ -17,7 +17,7 @@ const theme = createTheme({
     fontFamily:
       'IRANSansXV, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
   },
-  /*components: {
+  components: {
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
@@ -27,7 +27,7 @@ const theme = createTheme({
         }
       `,
     },
-  },*/
+  },
 });
 
 export default theme;

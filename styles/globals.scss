@@ -10,7 +10,7 @@
   src: url('../public/fonts/IRANSansXV.woff2') format('woff2-variations'),     /* for safari ? */
        url('../public/fonts/IRANSansXV.woff2') format('woff2');                /* for others ? */
   font-weight: 100 900;
-  font-display: fallback;
+  font-display: auto;
 }
 
 html,
