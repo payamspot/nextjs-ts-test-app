@@ -17,11 +17,11 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
-  ['Home', '/'],
-  ['Todo List', '/todo-list'],
-  ['P.1', '/products/1'],
-  ['Blog', '/blog'],
-  ['Products-SSR', '/products-ssr'],
+  ['صفحه اصلی', '/'],
+  ['تودو-لیست', '/todo-list'],
+  ['محصول1', '/products/1'],
+  ['وبلاگ', '/blog'],
+  ['محصولات-SSR', '/products-ssr'],
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -53,7 +53,7 @@ function Navigation() {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            LOGO
+            لوگو
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -99,7 +99,7 @@ function Navigation() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            LOGO
+            لوگو
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

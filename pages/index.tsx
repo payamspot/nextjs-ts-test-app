@@ -46,7 +46,7 @@ const Home: NextPage<Props> = ({ products }: Props) => {
       </Head>
       <Container maxWidth={false}>
         <Typography component="div">
-          <h2>Products to Consider!</h2>
+          <h2>محصولات مورد نظر شما!</h2>
           {/* Products */}
           <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
             {products.map((product) => (
