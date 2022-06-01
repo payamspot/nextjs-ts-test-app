@@ -14,29 +14,20 @@ const theme = createTheme({
   direction: 'rtl',
   faIR,
   typography: {
-    fontFamily: [
-      'IRANSansXV',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'sans-serif',
-    ].join(','),
+    fontFamily:
+      'IRANSansXV, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
   },
-  components: {
+  /*components: {
     MuiCssBaseline: {
       styleOverrides: `
         @font-face {
           font-family: 'IRANSansXV';
-          font-style: normal;
-          font-display: block;
-          font-weight: 500;
+          font-weight: 100 900;
+          font-display: auto;
         }
       `,
     },
-  },
+  },*/
 });
 
 export default theme;
