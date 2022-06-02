@@ -38,6 +38,7 @@ const Product: NextPage<Props> = ({ product }: Props) => {
               {product.id}: {product.title}
             </span>
           </h2>
+          {/* for 'static html export' use img instead of Image */}
           {/* not to use next/image !? ... */}
           {/*<div>
             <img

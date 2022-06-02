@@ -67,7 +67,10 @@ const ProductsSSR: NextPage<Props> = ({ products }: Props) => {
   );
 };
 
-export async function getServerSideProps() {
+{
+  /* for 'static html export' change getServerSideProps to getStaticProps */
+}
+export async function getStaticProps() {
   const res = await fetch(process.env.API_HOST + 'products');
   const products: Product[] = await res.json();
   return {
