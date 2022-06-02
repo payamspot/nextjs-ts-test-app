@@ -23,6 +23,10 @@ body [dir=rtl] {
   font-feature-settings: "ss02";
 }
 
+[dir=ltr] {
+  font-feature-settings: normal;
+}
+
 a {
   color: inherit;
   text-decoration: none;

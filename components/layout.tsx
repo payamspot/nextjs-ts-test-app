@@ -27,7 +27,16 @@ function Layout({ children }: Props) {
 
         <main>{children}</main>
 
-        <footer>footer!</footer>
+        <footer
+          dir="ltr"
+          style={{
+            textAlign: 'center',
+            fontWeight: 'bold',
+            marginBottom: '5px',
+          }}
+        >
+          footer! -- version 1.0.0 -- footer!
+        </footer>
       </div>
     </div>
   );
