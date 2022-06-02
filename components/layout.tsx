@@ -32,7 +32,7 @@ function Layout({ children }: Props) {
           style={{
             textAlign: 'center',
             fontWeight: 'bold',
-            marginBottom: '5px',
+            margin: '7px 0',
           }}
         >
           footer! -- version 1.0.0 -- footer!
