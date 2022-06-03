@@ -19,7 +19,14 @@ const cacheRtl = createCache({
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    /*<CacheProvider value={cacheRtl}>*/
+    <ThemeProvider theme={theme}>
+      {/*<CssBaseline />*/}
+      <Component {...pageProps} />
+    </ThemeProvider>
+    /*</CacheProvider>*/
+  );
 }
 
 export default MyApp;
