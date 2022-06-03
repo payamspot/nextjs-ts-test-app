@@ -15,19 +15,15 @@
     "@fontsource/roboto": "^4.5.5",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.3",
-    "@mui/styled-engine-sc": "^5.8.0",
     "axios": "^0.27.2",
     "next": "12.1.5",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "styled-components": "^5.3.5",
-    "stylis-plugin-rtl": "^1.1.0"
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@types/node": "17.0.29",
     "@types/react": "18.0.8",
     "@types/react-dom": "18.0.0",
-    "@types/styled-components": "^5.1.25",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
