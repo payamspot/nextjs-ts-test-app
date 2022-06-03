@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     /*<CacheProvider value={cacheRtl}>*/
     <ThemeProvider theme={theme}>
-      {/*<CssBaseline />*/}
+      <CssBaseline />
       <Component {...pageProps} />
     </ThemeProvider>
     /*</CacheProvider>*/
