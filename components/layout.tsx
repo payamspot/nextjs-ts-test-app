@@ -35,7 +35,7 @@ function Layout({ children }: Props) {
             margin: '7px 0',
           }}
         >
-          footer! -- version 1.0.7 -- footer!
+          footer! -- version 1.0.8 -- footer!
         </footer>
       </div>
     </div>

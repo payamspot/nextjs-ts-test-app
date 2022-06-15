@@ -40,7 +40,7 @@ const Product: NextPage<Props> = ({ product }: Props) => {
           </h2>
           {/* for 'static html export' use img instead of Image */}
           {/* not to use next/image !? ... */}
-          {/*<div>
+          <div>
             <img
               src={'/images/products/00' + product.id + '.jpg'}
               alt={product.title}
@@ -51,9 +51,9 @@ const Product: NextPage<Props> = ({ product }: Props) => {
               alt="sample product"
               style={{ width: '100%', maxWidth: '800px' }}
             />
-          </div>*/}
+          </div>
           {/* or to use next/image !!! */}
-          <div>
+          {/*<div>
             <Image
               src={productImage1}
               alt="product.title"
@@ -68,7 +68,7 @@ const Product: NextPage<Props> = ({ product }: Props) => {
               height={450}
               placeholder="blur"
             />
-          </div>
+          </div>*/}
         </Typography>
       </Container>
     </Layout>
